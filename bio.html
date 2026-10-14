@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Miguel Colom" />
+  <title>Miguel Colom — Violinist</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;1,400;1,500&family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300;1,400&family=Jost:wght@300;400;500&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body class="bio">
+
+  <!-- HEADER -->
+  <header class="header" id="header">
+    <a class="logo" href="index.html">MIGUEL COLOM</a>
+
+    <button class="menu-toggle" id="menuBtn" aria-label="Toggle navigation" aria-expanded="false">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+
+<nav class="nav" id="nav">
+  <a href="index.html">Home</a>
+  <a href="bio.html">Biography</a>
+  <a href="media.html">Media</a>
+  <a href="index.html#contact">Contact</a>
+</nav>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero" id="home">
+    <div class="hero-bg">
+      <img src="miguelcolom.jpg" alt="Miguel Colom" onerror="this.style.display='none'">
+    </div>
+
+    <div class="hero-content">
+      <span class="hero-kicker">Violinist · Concertmaster</span>
+
+      <h1 class="hero-title">
+        Biography<br />
+      </h1>
+
+    </div>
+    <div class="hero-scroll">
+      <span>Scroll</span>
+      <div class="hero-scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- BIO -->
+  <section class="section" id="bio">
+    <div class="container container--split">
+
+      <div class="split-label">
+        <span class="label">Biography</span>
+      </div>
+
+      <div class="split-content">
+        <h2>About<br /><em>Miguel Colom</em></h2>
+
+        <p>Miguel Colom was born in Madrid, where he took his first violin lessons with Sergio Castro and Anna Baget. He went on to study with Rainer Schmidt at the Reina Sofía School of Music and then moved to Berlin, continuing his training with Antje Weithaas at the Hochschule für Musik Hanns Eisler and with Nora Chastain at the Universität der Künste. Masterclasses with Eberhard Feltz, Ferenc Rados, Ana Chumachenco, Claudio Martínez Mehner and Mauricio Fuks further shaped his musical outlook.</p>
+
+        <p>His competition successes include first prizes at the Ibolyka Gyarfas Violin Competition in Berlin and the Juventudes Musicales de España Competition, a prize at the Max Rostal International Competition, an award at the Andrea Postacchini International Competition in Fermo, and the First Prize, a Special Prize and the prize for the best interpretation of Spanish music at the “Villa de Llanes” International Violin Competition. In 2021 he received the Orpheus Award of the Manhattan International Music Competition, which led to his debut at Carnegie Hall.</p>
+
+        <p>As a soloist he has performed with the Konzerthausorchester Berlin, the Spanish National Orchestra, the RTVE Symphony Orchestra, the Barcelona Symphony and Catalonia National Orchestra (OBC), the Royal Seville Symphony Orchestra, the Kölner Kammerorchester and the ADDA Simfònica in Alicante, among others. His concerts have taken him to the Berlin Philharmonie and Konzerthaus, the Auditorio Nacional and the Fundación Juan March in Madrid, the Palau de la Música Catalana and L’Auditori in Barcelona, the Palau de les Arts in Valencia and the Helsinki Music Centre.</p>
+
+        <p>Miguel Colom is First Concertmaster of the Spanish National Orchestra and Choir (OCNE). He is also regularly invited to lead orchestras such as the Konzerthausorchester Berlin, the NDR Radiophilharmonie, the Wiener Symphoniker, the Orquesta Sinfónica de Madrid, the OBC, the Orchestra of the Palau de les Arts and the Tenerife Symphony Orchestra, and he has played as a guest with the Berlin Philharmonic.</p>
+
+        <p>Chamber music is central to his work. He has shared the stage with Antje Weithaas, Rainer Schmidt, Denis Pascal, Karl Leister, Pepe Romero, the Dúo del Valle and the Quiroga, Casals and Artemis quartets, and he is a member of the VibrArt Trio together with pianist Juan Pérez Floristán and cellist Fernando Arias.</p>
+
+        <p>Teaching is a lasting commitment for him. Since 2021 he has been Associate Professor of the Telefónica Violin Chair at the Reina Sofía School of Music in Madrid, alongside Christoph Poppen, and he also teaches at the Barenboim-Said Academy in Seville. He previously taught at the Conservatorio Superior de Música de Aragón and at the Universidad Alfonso X el Sabio in Madrid.</p>
+
+        <p>His studies were supported by scholarships from the “la Caixa” Foundation, the AIE (Sociedad de Artistas Intérpretes o Ejecutantes) and Juventudes Musicales de Madrid. He plays violins by the Berlin luthiers Julia Pasch (2018) and Ragnar Hayn (2019).</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-brand">MIGUEL COLOM</div>
+
+      <nav class="footer-nav">
+        <a href="https://www.youtube.com/@miguelcolom3401" target="_blank" rel="noopener noreferrer">YouTube</a>
+        <a href="#bio">Biography</a>
+      </nav>
+
+      <small class="footer-copy">
+        &copy; <span id="year"></span> Miguel Colom. All rights reserved.
+      </small>
+    </div>
+  </footer>
+
+  <!-- COOKIE BANNER -->
+  <div class="cookie-banner" id="cookieBanner" style="display:none;">
+    <p>We use cookies to improve your experience.</p>
+
+    <div class="cookie-actions">
+      <button class="btn btn--primary btn--sm" onclick="acceptCookies()">Accept</button>
+      <button class="btn btn--ghost btn--sm" onclick="rejectCookies()">Reject</button>
+    </div>
+  </div>
+
+  <!-- SCRIPT -->
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    const header = document.getElementById('header');
+
+    window.addEventListener('scroll', function () {
+      header.classList.toggle('scrolled', window.scrollY > 40);
+    });
+
+    const nav = document.getElementById('nav');
+    const btn = document.getElementById('menuBtn');
+
+    btn.addEventListener('click', function () {
+      const open = nav.classList.toggle('is-open');
+      btn.setAttribute('aria-expanded', open);
+      document.body.classList.toggle('menu-open', open);
+    });
+
+    document.querySelectorAll('#nav a').forEach(link => {
+      link.addEventListener('click', function () {
+        nav.classList.remove('is-open');
+        btn.setAttribute('aria-expanded', 'false');
+        document.body.classList.remove('menu-open');
+      });
+    });
+
+    document.addEventListener('click', function (e) {
+      if (!nav.contains(e.target) && !btn.contains(e.target)) {
+        nav.classList.remove('is-open');
+        btn.setAttribute('aria-expanded', 'false');
+        document.body.classList.remove('menu-open');
+      }
+    });
+
+    function acceptCookies() {
+      try { localStorage.setItem('cookies', 'accepted'); } catch (e) {}
+      document.getElementById('cookieBanner').style.display = 'none';
+    }
+
+    function rejectCookies() {
+      try { localStorage.setItem('cookies', 'rejected'); } catch (e) {}
+      document.getElementById('cookieBanner').style.display = 'none';
+    }
+
+    var storedConsent = null;
+    try { storedConsent = localStorage.getItem('cookies'); } catch (e) {}
+    if (!storedConsent) {
+      document.getElementById('cookieBanner').style.display = 'flex';
+    }
+
+    // SAFE VERSION (no crash if form doesn't exist)
+    const contactForm = document.getElementById('contactForm');
+    if (contactForm) {
+      contactForm.addEventListener('submit', function (e) {
+        e.preventDefault();
+        const status = document.getElementById('formStatus');
+        if (status) {
+          status.textContent = 'Thank you — your message has been sent.';
+        }
+        this.reset();
+      });
+    }
+
+    // REVEAL ANIMATION
+    const revealEls = document.querySelectorAll('.section, .event-card, .quote');
+
+    const io = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('is-visible');
+          io.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.1 });
+
+    revealEls.forEach(el => io.observe(el));
+  </script>
+</body>
+</html>
