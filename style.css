@@ -1570,6 +1570,19 @@ html:not(.js) .split-label::before { transform: scaleX(1); }
 }
 
 
+
+/* ── Hero photo: blue duotone so it matches the palette ── */
+.hero-bg { background: linear-gradient(160deg, #4f86c0 0%, #1d3e6b 55%, #0a1628 100%); }
+.hero-bg img {
+  object-position: 62% 22%;
+  filter: grayscale(1) contrast(1.12) brightness(1.18);
+  mix-blend-mode: multiply;
+}
+@media (max-width: 768px) {
+  .hero-bg img,
+  body.bio .hero-bg img { object-position: 52% 20%; transform: scale(1.05); }
+}
+
 /* Fonts embedded here (SIL Open Font License) — no requests to Google */
 @font-face {
   font-family: 'Bodoni Moda';
