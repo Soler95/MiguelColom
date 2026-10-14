@@ -7,15 +7,19 @@
   <meta name="description" content="Datenschutzerklärung der Website von Miguel Colom." />
   <link rel="canonical" href="https://www.miguelcolom.com/datenschutz.html" />
   <script>document.documentElement.classList.add('js');</script>
-  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'>  <rect width='64' height='64' rx='12' fill='%231a1612'/>  <text x='32' y='43' text-anchor='middle' font-family='Georgia, 'Times New Roman', serif' font-style='italic' font-size='30' fill='%23c9a96e'>MC</text></svg>" type="image/svg+xml" />
-  <meta name="theme-color" content="#1a1612" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230a1628'/%3E%3Cg fill='none' stroke='%237eb3e6' stroke-linecap='round'%3E%3Cpath d='M24.5 13 C 36.5 18.5, 38.5 26.5, 32 32 C 25.5 37.5, 27.5 45.5, 39.5 51' stroke-width='2.8'/%3E%3Cpath d='M30.6 30.6 L 27.6 28.2 M33.4 33.4 L 36.4 35.8' stroke-width='2.2'/%3E%3C/g%3E%3Ccircle cx='22.5' cy='12.2' r='3.6' fill='%237eb3e6'/%3E%3Ccircle cx='41.5' cy='51.8' r='3.6' fill='%237eb3e6'/%3E%3C/svg%3E" type="image/svg+xml" />
+  <link rel="apple-touch-icon" href="apple-touch-icon.png" />
+  <meta name="theme-color" content="#0a1628" />
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
   <!-- HEADER -->
   <header class="header" id="header">
-    <a class="logo" href="index.html">MIGUEL COLOM</a>
+    <a class="logo" href="index.html" aria-label="Miguel Colom — Home">
+      <svg class="logo-mark" viewBox="18 7 28 50" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-linecap="round"><path d="M24.5 13 C 36.5 18.5, 38.5 26.5, 32 32 C 25.5 37.5, 27.5 45.5, 39.5 51" stroke-width="2.8"/><path d="M30.6 30.6 L 27.6 28.2 M33.4 33.4 L 36.4 35.8" stroke-width="2.2"/></g><circle cx="22.5" cy="12.2" r="3.6" fill="currentColor"/><circle cx="41.5" cy="51.8" r="3.6" fill="currentColor"/></svg>
+      <span class="logo-text"><span class="logo-name">Miguel <em>Colom</em></span><span class="logo-sub">Violinist</span></span>
+    </a>
     <button class="menu-toggle" id="menuBtn" aria-label="Toggle navigation" aria-expanded="false">
       <span></span>
       <span></span>
@@ -93,7 +97,10 @@
   <!-- FOOTER -->
   <footer class="footer">
     <div class="footer-inner">
-      <div class="footer-brand">MIGUEL COLOM</div>
+      <div class="footer-brand">
+        <svg class="logo-mark" viewBox="18 7 28 50" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-linecap="round"><path d="M24.5 13 C 36.5 18.5, 38.5 26.5, 32 32 C 25.5 37.5, 27.5 45.5, 39.5 51" stroke-width="2.8"/><path d="M30.6 30.6 L 27.6 28.2 M33.4 33.4 L 36.4 35.8" stroke-width="2.2"/></g><circle cx="22.5" cy="12.2" r="3.6" fill="currentColor"/><circle cx="41.5" cy="51.8" r="3.6" fill="currentColor"/></svg>
+        <span class="logo-name">Miguel <em>Colom</em></span>
+      </div>
       <nav class="footer-nav">
         <a href="https://www.youtube.com/@miguelcolom3401" target="_blank" rel="noopener noreferrer">YouTube</a>
         <a href="index.html#contact">Contact</a>
@@ -223,5 +230,6 @@
   }
 })();
   </script>
+  <script src="effects.js" defer></script>
 </body>
 </html>
