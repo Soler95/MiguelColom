@@ -1571,16 +1571,44 @@ html:not(.js) .split-label::before { transform: scaleX(1); }
 
 
 
-/* ── Hero photo: blue duotone so it matches the palette ── */
-.hero-bg { background: linear-gradient(160deg, #4f86c0 0%, #1d3e6b 55%, #0a1628 100%); }
+/* ── Hero photo: natural colours, softly cooled, with a navy fade for the text ── */
+.hero-bg { background: var(--ink); }
 .hero-bg img {
   object-position: 62% 22%;
-  filter: grayscale(1) contrast(1.12) brightness(1.18);
-  mix-blend-mode: multiply;
+  filter: saturate(0.8) contrast(1.05) brightness(0.92);
+  mix-blend-mode: normal;
+}
+.hero-bg::after {
+  background:
+    radial-gradient(circle at var(--mx, 68%) var(--my, 32%), rgba(126, 179, 230, 0.16) 0%, transparent 55%),
+    linear-gradient(90deg, rgba(10, 22, 40, 0.88) 0%, rgba(10, 22, 40, 0.55) 38%, rgba(10, 22, 40, 0.12) 70%, rgba(10, 22, 40, 0.3) 100%),
+    linear-gradient(180deg, rgba(10, 22, 40, 0.35) 0%, rgba(10, 22, 40, 0) 30%, rgba(4, 12, 26, 0.55) 72%, rgba(4, 12, 26, 0.95) 100%),
+    linear-gradient(0deg, rgba(40, 90, 150, 0.18), rgba(40, 90, 150, 0.18));
 }
 @media (max-width: 768px) {
   .hero-bg img,
   body.bio .hero-bg img { object-position: 52% 20%; transform: scale(1.05); }
+  .hero-bg::after {
+    background:
+      linear-gradient(180deg, rgba(10, 22, 40, 0.45) 0%, rgba(10, 22, 40, 0.05) 25%, rgba(4, 12, 26, 0.6) 62%, rgba(4, 12, 26, 0.96) 100%),
+      linear-gradient(0deg, rgba(40, 90, 150, 0.18), rgba(40, 90, 150, 0.18));
+  }
+}
+
+/* ── Language switch ── */
+.nav a.nav-lang {
+  padding: 0.35em 0.8em;
+  border: 1px solid rgba(126, 179, 230, 0.45);
+  border-radius: 999px;
+  font-size: 0.65rem;
+  letter-spacing: 0.18em;
+  color: var(--gold-light);
+  transition: background 0.25s, color 0.25s, border-color 0.25s;
+}
+.nav a.nav-lang::after { display: none; }
+.nav a.nav-lang:hover { background: var(--gold); color: var(--ink); border-color: var(--gold); }
+@media (max-width: 768px) {
+  .nav a.nav-lang { font-family: var(--font-ui); font-size: 0.8rem; margin-top: 1rem; }
 }
 
 /* Fonts embedded here (SIL Open Font License) — no requests to Google */

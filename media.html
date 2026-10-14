@@ -6,6 +6,9 @@
   <title>Media — Miguel Colom, Violinist</title>
   <meta name="description" content="Videos of violinist Miguel Colom: solo, chamber music and concertmaster performances." />
   <link rel="canonical" href="https://www.miguelcolom.com/media.html" />
+  <link rel="alternate" hreflang="en" href="https://www.miguelcolom.com/media.html" />
+  <link rel="alternate" hreflang="es" href="https://www.miguelcolom.com/multimedia.html" />
+  <link rel="alternate" hreflang="x-default" href="https://www.miguelcolom.com/media.html" />
   <script>document.documentElement.classList.add('js');</script>
   <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230a1628'/%3E%3Cg fill='none' stroke='%237eb3e6' stroke-linecap='round'%3E%3Cpath d='M24.5 13 C 36.5 18.5, 38.5 26.5, 32 32 C 25.5 37.5, 27.5 45.5, 39.5 51' stroke-width='2.8'/%3E%3Cpath d='M30.6 30.6 L 27.6 28.2 M33.4 33.4 L 36.4 35.8' stroke-width='2.2'/%3E%3C/g%3E%3Ccircle cx='22.5' cy='12.2' r='3.6' fill='%237eb3e6'/%3E%3Ccircle cx='41.5' cy='51.8' r='3.6' fill='%237eb3e6'/%3E%3C/svg%3E" type="image/svg+xml" />
   <link rel="apple-touch-icon" href="apple-touch-icon.png" />
@@ -30,6 +33,7 @@
       <a href="bio.html">Biography</a>
       <a href="media.html" aria-current="page">Media</a>
       <a href="index.html#contact">Contact</a>
+      <a class="nav-lang" href="multimedia.html" hreflang="es" lang="es" aria-label="Versión en español">ES</a>
     </nav>
   </header>
 
@@ -51,7 +55,7 @@
         <figure class="media-item">
         <div class="video-wrapper"
              data-video-src="https://www.youtube-nocookie.com/embed/6uaSwjeDZDs"
-             data-video-title="Sibelius Violin Concerto (excerpts)">
+             data-video-title="Sibelius — Violin Concerto in D minor, Op. 47 (excerpts) · Spanish National Orchestra, David Afkham">
           <button class="video-consent" type="button">
             <span class="video-consent__play" aria-hidden="true"></span>
             <span class="video-consent__text">Play video</span>
@@ -63,7 +67,7 @@
         <figure class="media-item">
         <div class="video-wrapper"
              data-video-src="https://www.youtube-nocookie.com/embed/K-kXibSHmQU"
-             data-video-title="Bach Sarabande from Partita in D minor">
+             data-video-title="Bach — Sarabande from Partita No. 2 in D minor · Auditorio Nacional, Madrid">
           <button class="video-consent" type="button">
             <span class="video-consent__play" aria-hidden="true"></span>
             <span class="video-consent__text">Play video</span>
@@ -75,7 +79,7 @@
         <figure class="media-item">
         <div class="video-wrapper"
              data-video-src="https://www.youtube-nocookie.com/embed/aH--nwA5ZO8"
-             data-video-title="Beethoven Triple Concerto — VibrArt Trio, ADDA Simfònica">
+             data-video-title="Beethoven — Triple Concerto · VibrArt Trio, ADDA·Simfònica Alicante, Josep Vicent">
           <button class="video-consent" type="button">
             <span class="video-consent__play" aria-hidden="true"></span>
             <span class="video-consent__text">Play video</span>
@@ -87,7 +91,7 @@
         <figure class="media-item">
         <div class="video-wrapper"
              data-video-src="https://www.youtube-nocookie.com/embed/2sy6fXrijwU"
-             data-video-title="VibrArt Trio — Música en Segura 2021">
+             data-video-title="VibrArt Trio with Juan Pérez Floristán and Fernando Arias · Música en Segura, 2021">
           <button class="video-consent" type="button">
             <span class="video-consent__play" aria-hidden="true"></span>
             <span class="video-consent__text">Play video</span>
@@ -97,7 +101,7 @@
           <figcaption>VibrArt Trio with Juan Pérez Floristán and Fernando Arias · Música en Segura, 2021</figcaption>
         </figure>
 
-        <!-- TO ADD A VIDEO: copy the <figure> above and change the video ID
+        <!-- TO ADD A VIDEO: copy a <figure> above and change the video ID
              (the part after "watch?v=" in the YouTube link) and the caption. -->
       </div>
 
@@ -106,20 +110,6 @@
       </div>
     </div>
   </section>
-
-  <!-- PHOTOS (uncomment and add images when available)
-  <section class="section" id="photos">
-    <div class="container">
-      <span class="label">Photos</span>
-      <h2>Gallery</h2>
-      <div class="photo-grid">
-        <img src="photos/photo-1.webp" alt="Miguel Colom performing" loading="lazy" />
-        <img src="photos/photo-2.webp" alt="Miguel Colom with violin" loading="lazy" />
-      </div>
-      <p class="photo-credit">Photos: NAME OF PHOTOGRAPHER</p>
-    </div>
-  </section>
-  -->
 
   <!-- FOOTER -->
   <footer class="footer">
@@ -131,8 +121,9 @@
       <nav class="footer-nav">
         <a href="https://www.youtube.com/@miguelcolom3401" target="_blank" rel="noopener noreferrer">YouTube</a>
         <a href="index.html#contact">Contact</a>
-        <a href="imprint.html">Imprint</a>
-        <a href="datenschutz.html">Datenschutz</a>
+        <a href="legal-notice.html">Legal notice</a>
+        <a href="privacy.html">Privacy</a>
+        <a href="#" data-cookie-reset>Cookie settings</a>
       </nav>
       <small class="footer-copy">&copy; <span id="year"></span> Miguel Colom. All rights reserved.</small>
     </div>
@@ -140,123 +131,14 @@
 
   <!-- COOKIE BANNER -->
   <div class="cookie-banner" id="cookieBanner" role="dialog" aria-label="Cookie consent" style="display:none;">
-    <p>This website uses cookies to improve your experience and to show embedded videos from YouTube. <a href="datenschutz.html">Privacy policy</a></p>
+    <p>This website only uses cookies when you play an embedded YouTube video. <a href="privacy.html">Privacy policy</a></p>
     <div class="cookie-actions">
-      <button class="btn btn--primary btn--sm" onclick="acceptCookies()">Accept</button>
-      <button class="btn btn--ghost btn--sm" onclick="rejectCookies()">Reject</button>
+      <button class="btn btn--primary btn--sm" type="button" onclick="acceptCookies()">Accept</button>
+      <button class="btn btn--ghost btn--sm" type="button" onclick="rejectCookies()">Reject</button>
     </div>
   </div>
 
-  <script>
-/* ============================================================
-   MIGUEL COLOM — shared script for subpages
-   (header, mobile menu, cookie banner, consent-based videos)
-   ============================================================ */
-(function () {
-  // Year in footer
-  var year = document.getElementById('year');
-  if (year) year.textContent = new Date().getFullYear();
-
-  // Header background on scroll
-  var header = document.getElementById('header');
-  function onScroll() {
-    if (header) header.classList.toggle('scrolled', window.scrollY > 40);
-  }
-  window.addEventListener('scroll', onScroll);
-  onScroll();
-
-  // Mobile menu
-  var nav = document.getElementById('nav');
-  var btn = document.getElementById('menuBtn');
-  function closeMenu() {
-    if (!nav || !btn) return;
-    nav.classList.remove('is-open');
-    btn.setAttribute('aria-expanded', 'false');
-    document.body.classList.remove('menu-open');
-  }
-  if (nav && btn) {
-    btn.addEventListener('click', function () {
-      var open = nav.classList.toggle('is-open');
-      btn.setAttribute('aria-expanded', open);
-      document.body.classList.toggle('menu-open', open);
-    });
-    nav.querySelectorAll('a').forEach(function (a) { a.addEventListener('click', closeMenu); });
-    document.addEventListener('click', function (e) {
-      if (!nav.contains(e.target) && !btn.contains(e.target)) closeMenu();
-    });
-    document.addEventListener('keydown', function (e) { if (e.key === 'Escape') closeMenu(); });
-  }
-
-  // Consent storage (never breaks the page if storage is blocked)
-  function getConsent() {
-    try { return localStorage.getItem('cookies'); } catch (e) { return null; }
-  }
-  function setConsent(value) {
-    try { localStorage.setItem('cookies', value); } catch (e) {}
-  }
-
-  // Videos: loaded only after consent or a click on "Play video"
-  function loadVideo(wrapper, autoplay) {
-    var src = wrapper.getAttribute('data-video-src');
-    if (!src) return;
-    var iframe = document.createElement('iframe');
-    iframe.src = src + (autoplay ? '?autoplay=1' : '');
-    iframe.title = wrapper.getAttribute('data-video-title') || 'Video';
-    iframe.allow = 'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture';
-    iframe.allowFullscreen = true;
-    wrapper.innerHTML = '';
-    wrapper.appendChild(iframe);
-    wrapper.removeAttribute('data-video-src');
-  }
-  function loadAllVideos() {
-    document.querySelectorAll('[data-video-src]').forEach(function (w) { loadVideo(w, false); });
-  }
-  document.querySelectorAll('[data-video-src] .video-consent').forEach(function (b) {
-    b.addEventListener('click', function () { loadVideo(b.parentElement, true); });
-  });
-
-  // Cookie banner
-  var banner = document.getElementById('cookieBanner');
-  window.acceptCookies = function () {
-    setConsent('accepted');
-    if (banner) banner.style.display = 'none';
-    loadAllVideos();
-  };
-  window.rejectCookies = function () {
-    setConsent('rejected');
-    if (banner) banner.style.display = 'none';
-  };
-
-  // "Change cookie settings" links/buttons (e.g. on the privacy page)
-  document.querySelectorAll('[data-cookie-reset]').forEach(function (el) {
-    el.addEventListener('click', function (e) {
-      e.preventDefault();
-      try { localStorage.removeItem('cookies'); } catch (err) {}
-      window.location.reload();
-    });
-  });
-
-  var consent = getConsent();
-  if (consent === 'accepted') loadAllVideos();
-  else if (!consent && banner) banner.style.display = 'flex';
-
-  // Reveal sections on scroll
-  var els = document.querySelectorAll('.section, .quote');
-  if ('IntersectionObserver' in window) {
-    var io = new IntersectionObserver(function (entries) {
-      entries.forEach(function (entry) {
-        if (entry.isIntersecting) {
-          entry.target.classList.add('is-visible');
-          io.unobserve(entry.target);
-        }
-      });
-    }, { threshold: 0.1 });
-    els.forEach(function (el) { io.observe(el); });
-  } else {
-    els.forEach(function (el) { el.classList.add('is-visible'); });
-  }
-})();
-  </script>
+  <script src="site.js"></script>
   <script src="effects.js" defer></script>
 </body>
 </html>
