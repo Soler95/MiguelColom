@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Concerts — Miguel Colom, Violinist</title>
+  <meta name="description" content="Upcoming concerts of violinist Miguel Colom." />
+  <link rel="canonical" href="https://www.miguelcolom.com/concerts.html" />
+  <link rel="alternate" hreflang="en" href="https://www.miguelcolom.com/concerts.html" />
+  <link rel="alternate" hreflang="es" href="https://www.miguelcolom.com/conciertos.html" />
+  <link rel="alternate" hreflang="x-default" href="https://www.miguelcolom.com/concerts.html" />
+  <script>document.documentElement.classList.add('js');</script>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230a1628'/%3E%3Cg fill='none' stroke='%237eb3e6' stroke-linecap='round'%3E%3Cpath d='M24.5 13 C 36.5 18.5, 38.5 26.5, 32 32 C 25.5 37.5, 27.5 45.5, 39.5 51' stroke-width='2.8'/%3E%3Cpath d='M30.6 30.6 L 27.6 28.2 M33.4 33.4 L 36.4 35.8' stroke-width='2.2'/%3E%3C/g%3E%3Ccircle cx='22.5' cy='12.2' r='3.6' fill='%237eb3e6'/%3E%3Ccircle cx='41.5' cy='51.8' r='3.6' fill='%237eb3e6'/%3E%3C/svg%3E" type="image/svg+xml" />
+  <link rel="apple-touch-icon" href="apple-touch-icon.png" />
+  <meta name="theme-color" content="#0a1628" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header class="header" id="header">
+    <a class="logo" href="index.html" aria-label="Miguel Colom — Home">
+      <svg class="logo-mark" viewBox="18 7 28 50" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-linecap="round"><path d="M24.5 13 C 36.5 18.5, 38.5 26.5, 32 32 C 25.5 37.5, 27.5 45.5, 39.5 51" stroke-width="2.8"/><path d="M30.6 30.6 L 27.6 28.2 M33.4 33.4 L 36.4 35.8" stroke-width="2.2"/></g><circle cx="22.5" cy="12.2" r="3.6" fill="currentColor"/><circle cx="41.5" cy="51.8" r="3.6" fill="currentColor"/></svg>
+      <span class="logo-text"><span class="logo-name">Miguel <em>Colom</em></span><span class="logo-sub">Violinist</span></span>
+    </a>
+    <button class="menu-toggle" id="menuBtn" aria-label="Toggle navigation" aria-expanded="false">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+    <nav class="nav" id="nav">
+      <a href="bio.html">Biography</a>
+      <a href="media.html">Media</a>
+      <a href="concerts.html" aria-current="page">Concerts</a>
+      <a href="vibrart-trio.html">Trío VibrArt</a>
+      <a href="index.html#contact">Contact</a>
+      <a class="nav-lang" href="conciertos.html" hreflang="es" lang="es" aria-label="Versión en español">ES</a>
+    </nav>
+  </header>
+
+  <!-- PAGE TITLE -->
+  <section class="page-hero">
+    <div class="container">
+      <span class="label">Concerts</span>
+      <h1>Upcoming <em>Concerts</em></h1>
+    </div>
+  </section>
+
+  <!-- CONCERTS (loaded from the Google Sheet "Calendario") -->
+  <section class="section" id="concerts">
+    <div class="container">
+      <span class="label">Calendar</span>
+      <div class="events-list" id="eventsList" data-sheet="1qijDu_PhhyhTDnIEYZfYHw3GOtDUiYMjdqqd-GqcjDs">
+        <p>Loading concerts…</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <svg class="logo-mark" viewBox="18 7 28 50" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-linecap="round"><path d="M24.5 13 C 36.5 18.5, 38.5 26.5, 32 32 C 25.5 37.5, 27.5 45.5, 39.5 51" stroke-width="2.8"/><path d="M30.6 30.6 L 27.6 28.2 M33.4 33.4 L 36.4 35.8" stroke-width="2.2"/></g><circle cx="22.5" cy="12.2" r="3.6" fill="currentColor"/><circle cx="41.5" cy="51.8" r="3.6" fill="currentColor"/></svg>
+        <span class="logo-name">Miguel <em>Colom</em></span>
+      </div>
+      <nav class="footer-nav">
+        <a href="https://www.youtube.com/@miguelcolom3401" target="_blank" rel="noopener noreferrer">YouTube</a>
+        <a href="index.html#contact">Contact</a>
+        <a href="legal-notice.html">Legal notice</a>
+        <a href="privacy.html">Privacy</a>
+        <a href="#" data-cookie-reset>Cookie settings</a>
+      </nav>
+      <small class="footer-copy">&copy; <span id="year"></span> Miguel Colom. All rights reserved.</small>
+    </div>
+  </footer>
+
+  <!-- COOKIE BANNER -->
+  <div class="cookie-banner" id="cookieBanner" role="dialog" aria-label="Cookie consent" style="display:none;">
+    <p>This website only uses cookies when you play an embedded YouTube video. <a href="privacy.html">Privacy policy</a></p>
+    <div class="cookie-actions">
+      <button class="btn btn--primary btn--sm" type="button" onclick="acceptCookies()">Accept</button>
+      <button class="btn btn--ghost btn--sm" type="button" onclick="rejectCookies()">Reject</button>
+    </div>
+  </div>
+
+  <script src="site.js"></script>
+  <script src="concerts.js"></script>
+  <script src="effects.js" defer></script>
+</body>
+</html>
