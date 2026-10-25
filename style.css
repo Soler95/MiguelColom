@@ -1595,7 +1595,8 @@ html:not(.js) .split-label::before { transform: scaleX(1); }
 
 /* ── Home hero photo (grey studio background) ── */
 .hero-bg:has(.hero-img--home) { background: #584a4a; }
-.hero-bg img.hero-img--home { object-fit: contain; object-position: 100% 100%; transform: none; }
+.hero-bg picture { display: contents; }
+.hero-bg img.hero-img--home { object-fit: cover; object-position: 75% 0%; transform: none; }
 @media (max-width: 768px) {
   .hero-bg img.hero-img--home { object-fit: cover; object-position: 55% 15%; transform: scale(1.05); }
 }
