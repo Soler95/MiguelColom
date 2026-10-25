@@ -1593,6 +1593,13 @@ html:not(.js) .split-label::before { transform: scaleX(1); }
   }
 }
 
+/* ── Home hero photo (grey studio background) ── */
+.hero-bg:has(.hero-img--home) { background: #584a4a; }
+.hero-bg img.hero-img--home { object-fit: contain; object-position: 100% 100%; transform: none; }
+@media (max-width: 768px) {
+  .hero-bg img.hero-img--home { object-fit: cover; object-position: 55% 15%; transform: scale(1.05); }
+}
+
 /* ── Trío VibrArt photo ── */
 .trio-photo-section { padding: clamp(2rem, 5vw, 4rem) 0 0; }
 .trio-photo { margin: 0; background: #000; }
