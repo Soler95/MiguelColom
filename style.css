@@ -1707,3 +1707,8 @@ html:not(.js) .split-label::before { transform: scaleX(1); }
   text-transform: uppercase;
   color: var(--gold-dark);
 }
+
+/* ── Home hero (desktop): strings at the right edge, clear of the photo ── */
+@media (min-width: 769px) {
+  .hero:has(.hero-img--home) .hero-strings { inset-inline-end: calc(var(--gutter) + 3rem); }
+}
