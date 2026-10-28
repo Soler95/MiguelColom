@@ -1712,3 +1712,30 @@ html:not(.js) .split-label::before { transform: scaleX(1); }
 @media (min-width: 769px) {
   .hero:has(.hero-img--home) .hero-strings { inset-inline-end: calc(var(--gutter) + 3rem); }
 }
+
+/* ── Hero title: blue word in plain colour, no sheen ── */
+.hero-title em {
+  background: none;
+  -webkit-text-fill-color: currentColor;
+  color: var(--gold);
+  animation: none;
+}
+
+/* ── Media: press photo grid ── */
+.photo-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+.photo-grid a { display: block; overflow: hidden; }
+.photo-grid img { height: 100%; aspect-ratio: 4 / 5; object-position: var(--focus, 50% 20%); }
+.photo-grid a:first-child { grid-row: span 2; }
+@media (max-width: 900px) {
+  .photo-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .photo-grid a:first-child { grid-row: auto; grid-column: 1 / -1; }
+  .photo-grid a:first-child img { aspect-ratio: 4 / 5; }
+}
+@media (max-width: 520px) {
+  .photo-grid { grid-template-columns: 1fr; }
+}
+
+/* ── Biography hero on phones: keep the head clear of the menu ── */
+@media (max-width: 768px) {
+  body.bio .hero-bg img.hero-img--home { height: calc(100% - 4.5rem); margin-top: 4.5rem; object-position: 55% 0%; transform: none; }
+}
